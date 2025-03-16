@@ -56,7 +56,7 @@ npm run dev
 
 ## Folder Structure
 ```
-invoice-generator/
+InvoiceGen/
 │── backend/
 │   ├── config/
 │   ├── controllers/
