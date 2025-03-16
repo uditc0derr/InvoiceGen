@@ -21,8 +21,8 @@ A **MERN Stack** application for managing invoices, sending them via email, and 
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/your-username/invoice-generator.git
-cd invoice-generator
+https://github.com/uditc0derr/InvoiceGen
+cd InvoiceGen
 ```
 
 ### 2. Backend Setup
@@ -72,8 +72,6 @@ invoice-generator/
 │   ├── src/
 │   ├── components/
 │   ├── pages/
-│   ├── services/
-│   ├── hooks/
 │   ├── App.js
 │   ├── main.jsx
 │   ├── tailwind.config.js
