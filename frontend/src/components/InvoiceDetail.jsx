@@ -102,7 +102,7 @@ const InvoiceDetail = () => {
       `;
   
       await axios.post(
-        "http://localhost:5000/api/send-email",
+        "https://invoicegen-backend.onrender.com/api/send-email",
         {
           to: invoice.customerEmail,
           subject: `Invoice #${invoice._id}`,
