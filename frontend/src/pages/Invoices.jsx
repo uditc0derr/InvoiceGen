@@ -13,7 +13,7 @@ const Invoices = () => {
   useEffect(() => {
     const fetchInvoices = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/invoice/all", {
+        const response = await axios.get("https://invoicegen-backend.onrender.com/api/invoice/all", {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
         });
         setInvoices(response.data);
