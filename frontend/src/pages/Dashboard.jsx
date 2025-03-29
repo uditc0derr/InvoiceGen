@@ -33,16 +33,13 @@ const Dashboard = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
-      {/* Navbar */}
       <Navbar />
 
       <div className="flex flex-1 overflow-hidden">
-        {/* Sidebar - Fixed width to prevent content from overflowing */}
         <div className="w-64 bg-white shadow-lg">
           <Sidebar />
         </div>
 
-        {/* Main Content - Ensure it doesn't overflow */}
         <div className="flex-1 p-6 overflow-auto">
           <div className="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-6">
             <h1 className="text-3xl font-bold mb-4">Dashboard</h1>

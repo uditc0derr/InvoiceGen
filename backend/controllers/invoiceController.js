@@ -20,7 +20,7 @@ const createInvoice = async (req, res) => {
             totalAmount,
         });
 
-        console.log("Invoice Saved:", invoice); // Debugging output
+        console.log("Invoice Saved:", invoice); 
 
         if (customerEmail) {
             await sendInvoiceEmail(customerEmail, 'New Invoice', 'Your invoice details', JSON.stringify(invoice));
@@ -34,7 +34,6 @@ const createInvoice = async (req, res) => {
 };
 
 
-// Get invoices of a specific user
 const getInvoicesByUser = async (req, res) => {
     try {
         const invoices = await Invoice.find({ customerName: req.params.name, owner: req.user.id });

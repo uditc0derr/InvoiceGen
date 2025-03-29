@@ -5,8 +5,8 @@ const Sidebar = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    localStorage.removeItem("token"); // Remove authentication token
-    navigate("/login"); // Redirect to login page
+    localStorage.removeItem("token");
+    navigate("/login"); 
   };
 
   return (
@@ -21,7 +21,6 @@ const Sidebar = () => {
         </li>
       </ul>
 
-      {/* Logout Button */}
       <button
         onClick={handleLogout}
         className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded cursor-pointer w-full transition"

@@ -1,16 +1,14 @@
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 
-// Configure Gmail SMTP transporter
 const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        user: process.env.EMAIL_USER, // Your Gmail address
-        pass: process.env.EMAIL_PASS  // Your Gmail App Password
+        user: process.env.EMAIL_USER, 
+        pass: process.env.EMAIL_PASS  
     }
 });
 
-// Function to send an email
 const sendInvoiceEmail = async (to, subject, text, html) => {
     try {
         const mailOptions = {

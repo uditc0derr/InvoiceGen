@@ -17,7 +17,7 @@ const Login = () => {
       });
 
       localStorage.setItem("token", response.data.token);
-      navigate("/dashboard"); // Redirect to dashboard after login
+      navigate("/dashboard"); 
     } catch (error) {
       setError("Invalid email or password. Please try again.");
     }

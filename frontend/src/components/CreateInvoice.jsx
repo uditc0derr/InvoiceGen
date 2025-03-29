@@ -75,14 +75,11 @@ const CreateInvoice = () => {
 
   return (
     <div className="flex min-h-screen bg-gray-100">
-      {/* Sidebar */}
       <Sidebar />
 
       <div className="flex-1 flex flex-col">
-        {/* Navbar */}
         <Navbar />
 
-        {/* Main Content */}
         <div className="flex justify-center items-start mt-8 ml-[20%]">
           <div className="w-full max-w-3xl bg-white shadow-lg rounded-lg p-8 border">
             <h2 className="text-3xl font-semibold text-gray-800 mb-6">📝 Create Invoice</h2>
@@ -94,7 +91,6 @@ const CreateInvoice = () => {
             )}
 
             <form onSubmit={handleSubmit}>
-              {/* Customer Name */}
               <div className="mb-4">
                 <label className="block font-medium text-gray-700">Customer Name</label>
                 <input
@@ -107,7 +103,6 @@ const CreateInvoice = () => {
                 />
               </div>
 
-              {/* Customer Email */}
               <div className="mb-4">
                 <label className="block font-medium text-gray-700">Customer Email</label>
                 <input
@@ -120,7 +115,6 @@ const CreateInvoice = () => {
                 />
               </div>
 
-              {/* Products */}
               <div className="mb-4">
                 <label className="block font-medium text-gray-700">Products</label>
                 {products.map((product, index) => (
@@ -168,7 +162,6 @@ const CreateInvoice = () => {
                 </button>
               </div>
 
-              {/* Total Amount */}
               <div className="mb-4">
                 <label className="block font-medium text-gray-700">Total Amount (₹)</label>
                 <input
@@ -179,7 +172,6 @@ const CreateInvoice = () => {
                 />
               </div>
 
-              {/* Submit Button */}
               <button
                 type="submit"
                 className={`w-full py-3 rounded-md text-white font-medium cursor-pointer ${

@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const InvoiceSchema = new mongoose.Schema({
   owner: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
   customerName: { type: String, required: true },
-  customerEmail: { type: String, default: "" }, // Email is optional
+  customerEmail: { type: String, default: "" },
   products: [
     {
       name: { type: String, required: true },

@@ -41,14 +41,11 @@ const Invoices = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
-      {/* Navbar */}
       <Navbar />
 
       <div className="flex flex-1">
-        {/* Sidebar */}
         <Sidebar />
 
-        {/* Main Content */}
         <div className="flex-1 p-6 ml-64">
           <div className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
             <div className="flex justify-between items-center mb-4">

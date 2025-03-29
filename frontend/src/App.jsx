@@ -5,9 +5,6 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Invoices from "./pages/Invoices";
 import InvoiceDetail from "./components/InvoiceDetail";
-// import Profile from "./pages/Profile";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
 import CreateInvoice from "./components/CreateInvoice";
 import LandingPage from "./pages/Landing";
 

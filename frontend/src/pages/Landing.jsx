@@ -5,7 +5,6 @@ const LandingPage = () => {
 
   return (
     <div className="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-600 to-purple-700 text-white">
-      {/* Navbar */}
       <nav className="absolute top-0 left-0 w-full flex justify-between px-10 py-4 bg-opacity-20 backdrop-blur-lg shadow-md">
         <h1 className="text-2xl font-bold">📄 InvoiceGen</h1>
         <div>
@@ -24,7 +23,6 @@ const LandingPage = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <div className="text-center max-w-3xl">
         <h2 className="text-4xl font-bold leading-snug">Manage Your Invoices <span className="text-yellow-300">Easily</span> & <span className="text-green-300">Efficiently</span></h2>
         <p className="text-lg mt-4 text-gray-200">
