@@ -46,7 +46,7 @@ const CreateInvoice = () => {
 
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:5000/api/invoice/create", {
+      const response = await fetch("https://invoicegen-backend.onrender.comapi/invoice/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
