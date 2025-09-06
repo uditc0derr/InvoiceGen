@@ -80,5 +80,3 @@ This application allows users to create, manage, and send invoices. It features 
     ```
 
 The application will be running at `http://localhost:5173`.
-
-## 📁 Folder Structure
