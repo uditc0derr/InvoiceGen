@@ -4,44 +4,81 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-600 to-purple-700 text-white">
-      <nav className="absolute top-0 left-0 w-full flex justify-between px-10 py-4 bg-opacity-20 backdrop-blur-lg shadow-md">
-        <h1 className="text-2xl font-bold">📄 InvoiceGen</h1>
-        <div>
-          <button 
+    <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col">
+      {/* Navbar */}
+      <nav className="w-full px-8 py-4 flex justify-between items-center bg-white shadow-sm">
+        <h1 className="text-2xl font-semibold text-indigo-600">
+          InvoiceGen
+        </h1>
+
+        <div className="space-x-4">
+          <button
             onClick={() => navigate("/login")}
-            className="px-6 py-2 mr-4 text-lg font-semibold bg-white text-blue-600 rounded-lg hover:bg-gray-200 transition cursor-pointer"
+            className="px-5 py-2 text-sm font-medium text-slate-600 hover:text-indigo-600 transition"
           >
             Login
           </button>
-          <button 
+          <button
             onClick={() => navigate("/register")}
-            className="px-6 py-2 text-lg font-semibold bg-blue-500 hover:bg-blue-600 rounded-lg transition cursor-pointer"
+            className="px-5 py-2 text-sm font-medium bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition"
           >
-            Sign Up
+            Sign up
           </button>
         </div>
       </nav>
 
-      <div className="text-center max-w-3xl">
-        <h2 className="text-4xl font-bold leading-snug">Manage Your Invoices <span className="text-yellow-300">Easily</span> & <span className="text-green-300">Efficiently</span></h2>
-        <p className="text-lg mt-4 text-gray-200">
-          Create, manage, and send invoices with ease. Track your transactions and streamline your business finances with our powerful Invoice Management System.
-        </p>
+      {/* Hero Section */}
+      <main className="flex-1 flex items-center justify-center px-6">
+        <div className="max-w-5xl w-full grid md:grid-cols-2 gap-10 items-center">
+          
+          {/* Left Content */}
+          <div>
+            <h2 className="text-4xl font-bold leading-tight text-slate-900">
+              Simple invoicing for  
+              <span className="text-indigo-600"> modern businesses</span>
+            </h2>
 
-        <div className="mt-6">
-          <button 
-            onClick={() => navigate("/register")}
-            className="px-8 py-3 text-lg font-semibold bg-yellow-400 hover:bg-yellow-500 text-gray-900 rounded-lg shadow-md transition cursor-pointer"
-          >
-            Get Started 🚀
-          </button>
+            <p className="mt-4 text-slate-600 text-lg">
+              Create professional invoices, track payments, and manage
+              your finances — all from one clean dashboard.
+            </p>
+
+            <div className="mt-6 flex gap-4">
+              <button
+                onClick={() => navigate("/register")}
+                className="px-7 py-3 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700 transition shadow"
+              >
+                Get started
+              </button>
+
+              <button
+                onClick={() => navigate("/login")}
+                className="px-7 py-3 border border-slate-300 text-slate-700 font-medium rounded-md hover:border-indigo-600 hover:text-indigo-600 transition"
+              >
+                View demo
+              </button>
+            </div>
+          </div>
+
+          {/* Right Card */}
+          <div className="bg-white rounded-xl shadow-lg p-8">
+            <h3 className="text-lg font-semibold text-slate-800 mb-4">
+              Why InvoiceGen?
+            </h3>
+
+            <ul className="space-y-3 text-slate-600">
+              <li>✔ Create invoices in seconds</li>
+              <li>✔ Track payments & due dates</li>
+              <li>✔ Download & share PDFs</li>
+              <li>✔ Secure & cloud-based</li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </main>
 
       {/* Footer */}
-      <footer className="absolute bottom-4 text-gray-200 text-sm">
-        © {new Date().getFullYear()} InvoiceGen. All rights reserved.
+      <footer className="py-4 text-center text-sm text-slate-500">
+        © {new Date().getFullYear()} InvoiceGen. Built for growing businesses.
       </footer>
     </div>
   );
